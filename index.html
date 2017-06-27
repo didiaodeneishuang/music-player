@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>H5 Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="bgAll">
+        <img id="bgBottom" src="img/0.jpg" alt="背景图">
+        <img id="bgTop" src="img/0.jpg"  alt="背景图">
+    </div>
+    <div class="musicBox">
+        <!--自定义属性data-后面的变量不能用驼峰表示法-->
+        <audio class="audioPlayer" data-current="0" data-all="6" src="songs/0.mp3"></audio>
+        <div class="controls">
+            <input class="range" type="range" value="0">
+            <span class="currentTime">00:00</span>
+            <span class="endTime">06:50</span>
+            <span class="favorite">❤</span>
+            <span class="songList">☲</span>
+            <h3 class="songName">传奇</h3>
+            <h4 class="singer">王菲</h4>
+            <span class="toggleLeft previous" data-offset="-1">◁</span>
+            <span class="toggleRight next" data-offset="1">▷</span>
+            <span class="play">▷</span>
+        </div>
+    </div>
+    <div class="list">
+        <div class="listHead">播放列表</div>
+        <ul>
+            <li class="item" data-index="0">传奇-王菲</li>
+            <li class="item" data-index="1">吴哥窟-吴雨霏</li>
+            <li class="item" data-index="2">恋曲1990-罗大佑</li>
+            <li class="item" data-index="3">明年今日-陈奕迅</li>
+            <li class="item" data-index="4">再见二丁目-杨千嬅</li>
+            <li class="item" data-index="5">贝加尔湖畔-李健</li>
+        </ul>
+    </div>
+
+        <!--<div class="songList move">-->
+            <!--<span class="list-title">播放列表</span>-->
+            <!--<span class="xian"></span>-->
+            <!--<div class="song-title">-->
+                <!--<span id="title-0" class="songtitle" data-path="0">传奇-王菲</span>-->
+                <!--<span class="xian"></span>-->
+                <!--<span id="title-1" class="songtitle" data-path="1">吴哥窟-吴雨霏</span>-->
+                <!--<span class="xian"></span>-->
+                <!--<span id="title-2" class="songtitle" data-path="2">恋曲1990-罗大佑</span>-->
+                <!--<span class="xian"></span>-->
+                <!--<span id="title-3" class="songtitle" data-path="3">明年今日-陈奕迅</span>-->
+                <!--<span class="xian"></span>-->
+                <!--<span id="title-4" class="songtitle" data-path="4">再见二丁目-杨千嬅</span>-->
+                <!--<span class="xian"></span>-->
+                <!--<span id="title-5" class="songtitle" data-path="5">贝加尔湖畔-李健</span>-->
+                <!--<span class="xian"></span>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    <script src="js/myTemplate.js"></script>
+    <script src="js/master.js"></script>
+</body>
+</html>
